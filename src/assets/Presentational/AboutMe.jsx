@@ -3,6 +3,7 @@ import './AboutMe.css';
 
 function AboutMe(props){
   return (<section id="meSection" className="body">
+<h2 className="reference">./About Me</h2>
   <div id="mePic">
       <div id="frame1"></div>
       <div id="frame2"></div>

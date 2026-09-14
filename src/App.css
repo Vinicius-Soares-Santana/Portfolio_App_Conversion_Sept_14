@@ -68,8 +68,10 @@ body {
 #mainTitle {
   grid-area: title;
   text-shadow: 0 0 5px white;
+  margin-left: 5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2vh;
-  padding-left: 1vw;
+  font-weight:900;
 }
 
 #preTitle {

@@ -17,7 +17,6 @@
                        ". . InstagramLogo Instagram . ."
                        ". . . . . .";
   row-gap: 2vh;
-
 }
 
 #information img {
@@ -30,18 +29,21 @@
   grid-area: Email;
   display: grid;
   justify-content: start;
+  text-align:left;
 }
 
 #linkedinId {
   grid-area: Linkedin;
   display: grid;
   justify-content: start;
+  text-align:left;
 }
 
 #instagramId {
   grid-area: Instagram;
   display: grid;
   justify-content: start;
+  text-align:left;
 }
 
 #emailLogo {

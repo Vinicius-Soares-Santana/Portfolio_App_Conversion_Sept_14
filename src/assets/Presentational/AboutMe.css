@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 2fr 3fr 6fr 2fr;
   grid-template-rows: 1fr 10fr 1fr;
-  grid-template-areas: ". . . ."
+  grid-template-areas: "reference reference . ."
                        ". picture title ."
                        ". . . .";
   align-items: center;
@@ -58,6 +58,15 @@
 .title {
   font-size: 1.7rem;
   text-shadow: 0 0 5px white;
+}
+
+.reference{
+  grid-area: reference;
+  text-shadow: 0 0 5px white;
+  margin-left: 5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  font-weight:900;
 }
 
 
