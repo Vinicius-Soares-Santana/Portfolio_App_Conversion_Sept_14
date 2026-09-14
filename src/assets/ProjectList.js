@@ -1,7 +1,7 @@
 const ProjectList = [
   {
     id: 1,
-    image: "./Images/Tiles_Wizard_Project.png",
+    image: "/Images/Tiles_Wizard_Project.png",
     title: "Tiles Wizard",
     description: "A 3D platform minigame where you try to memorize a secret path",
     technologies: ["Unity", "C#"],

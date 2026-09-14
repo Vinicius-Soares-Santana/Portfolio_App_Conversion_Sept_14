@@ -35,10 +35,9 @@
 .project-card img {
   grid-area: image;
   box-sizing: border-box;
-  height: 100%;
-  width: auto;
-  padding: 3vh;
+  width: 100%;
   object-fit: contain;
+  border: 2px solid rgba(65, 227, 255, 0.607);
 }
 
 .project-card .cardTitle {
@@ -95,6 +94,7 @@
 @media (max-width: 620px) {
   #projects .project-card {
     width: 40vw;
+    min-height: 170px;
   }
 }
 
@@ -107,7 +107,8 @@
       'image image'
       'title title'
       'buttom1 buttom2';
-    min-height: 60vh;
+    height: 60vh;
+    min-height: 170px;
   }
 
   .project-card .cardDescription {

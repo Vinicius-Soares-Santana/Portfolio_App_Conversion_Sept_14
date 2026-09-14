@@ -18,22 +18,22 @@ function SoftwareDevPage(porps){
       <h3>Some of my skills:</h3>
       <div id="galeryskills">
            <div className="image-card">
-              <img src="./Resourses/Images/HTML5_logo.png"/>
+              <img src="/Img_Sources/HTML5_logo.png"/>
           </div>
           <div className="image-card">
-              <img src="./Resourses/Images/CSS3_logo.png"/>
+              <img src="./Img_Sources/CSS3_logo.png"/>
           </div>
           <div className="image-card">
-              <img src="./Resourses/Images/JavaScript_Logo.png"/>
+              <img src="./Img_Sources/JavaScript_Logo.png"/>
           </div>
           <div className="image-card">
               <img src="https://images.icon-icons.com/2415/PNG/512/csharp_plain_logo_icon_146577.png"/>
           </div>
           <div className="image-card">
-              <img src="./Resourses/Images/Python_logo.png"/>
+              <img src="./Img_Sources/Python_logo.png"/>
           </div>
           <div className="image-card" id="sql">
-              <img src="./Resourses/Images/Sql_logo.svg"/>
+              <img src="./Img_Sources/Sql_logo.svg"/>
           </div>
       </div>
   </section>
