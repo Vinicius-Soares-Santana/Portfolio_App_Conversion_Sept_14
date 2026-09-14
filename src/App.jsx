@@ -8,7 +8,6 @@ import NavBar from './assets/Presentational/NavBar';
 import SoftwareDevPage from './assets/Presentational/SoftwareDevPage';
 import AboutMe from './assets/Presentational/AboutMe';
 import AllProjects from './assets/Presentational/AllProjects';
-import PlayTestPage from './assets/Presentational/PlayTestPage';
 import './App.css';
 
 const router = createBrowserRouter(createRoutesFromElements(
@@ -20,7 +19,6 @@ const router = createBrowserRouter(createRoutesFromElements(
           <Route path='contactpage' element={<ContactPage />} />
           <Route path='aboutme' element={ <AboutMe /> } />
           <Route path='allprojects' element={ <AllProjects /> } />
-          <Route path='playtestpage/:playid' element={<PlayTestPage />} />
       </Route>
   </Route>
 ));

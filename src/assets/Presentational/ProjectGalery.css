@@ -22,7 +22,7 @@
 #projects #ProjectsGaleryGrid {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0fr, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: auto;
   gap: 24px;
   padding: 40px;

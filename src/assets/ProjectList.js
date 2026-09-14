@@ -13,7 +13,7 @@ const ProjectList = [
   {
     id: 2,
     image: "",
-    title: "Jamming React App",
+    title: "Jamming",
     description: "An app that creates personalized playlists on spotify",
     technologies: ["REACT", "API"],
     github: "https://github.com/Vinicius-Soares-Santana/Jamming_App",

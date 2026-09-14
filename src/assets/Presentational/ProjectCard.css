@@ -1,4 +1,5 @@
 #projects .project-card {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: 4fr 1.4rem auto 1fr;
@@ -45,6 +46,9 @@
   box-sizing: border-box;
   font-size: 1rem;
   padding: 0;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  -webkit-text-stroke: 1px rgba(0, 217, 255, 0.712);
 }
 
 .project-card .cardDescription {
