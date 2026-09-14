@@ -1,0 +1,60 @@
+/*------------------Main Body----------------------*/
+
+
+#meSection {
+  display: grid;
+  grid-template-columns: 2fr 3fr 6fr 2fr;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-areas: ". . . ."
+                       ". picture title ."
+                       ". . . .";
+  align-items: center;
+  color: white;
+  font-size: 1.5vw;
+  text-align: left;
+  word-spacing: 0.05em;
+  z-index: 0;
+  position: relative;
+  background-color: radial-gradient(circle 50vh at 50% -5%, rgb(192, 96, 0) 0%, white 10%, lightblue 40%, darkblue 100%);
+}
+
+#meSection #profilePic {
+  height: 40vh;
+  width: auto;
+  border-radius: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+#meSection #frame1 {
+  background-color:orangered;
+  z-index: 2;
+  transform: translate(0.3vh, 0.7vh);
+}
+
+#meSection #frame2 {
+  background-color:rgb(255, 100, 43);
+  z-index: 1;
+  transform: translate(0.7vh, 0.3vh);
+}
+
+#meSection #frame2, #meSection #frame1 {
+  border-radius: 100%;
+  grid-area: picture;
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+  align-self: center;
+}
+
+#meSection #mePic {
+  grid-area: picture;
+}
+
+#meSection #aboutMe {
+  grid-area: title;
+}
+
+.title {
+  font-size: 2.5rem;
+}

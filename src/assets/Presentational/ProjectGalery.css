@@ -1,0 +1,32 @@
+#projects {
+  background: linear-gradient(180deg, #00010cee 5%, #010a75 100%);
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 3px white;
+  min-height: 100vh;
+  justify-items: center;
+}
+
+.sectionHeader{
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 4vh 3vw;
+  font-size: 1.5rem;
+}
+
+#projects p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+#projects #ProjectsGaleryGrid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0fr, 1fr));
+  grid-template-rows: auto;
+  gap: 24px;
+  padding: 40px;
+  align-items: center;
+}
+
+

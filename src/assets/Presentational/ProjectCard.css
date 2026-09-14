@@ -1,0 +1,113 @@
+#projects .project-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 4fr 1.4rem auto 1fr;
+  grid-template-areas:
+    'image image'
+    'title title'
+    'desc desc'
+    'buttom1 buttom2';
+  background: #363d8f38;
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  padding: 10%;
+
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 217, 255, 0.467);
+  min-height: 150px;
+  min-width: 100px;
+
+  /*remove later*/
+  justify-items: center;
+  align-items: center;
+  height: 30vh;
+  width: 12vw;
+  font-size: clamp(0.3rem, 2.5vh, 2rem);
+}
+
+#projects .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(65, 227, 255, 0.607);
+}
+
+.project-card img {
+  grid-area: image;
+  box-sizing: border-box;
+  height: 100%;
+  width: auto;
+  padding: 3vh;
+  object-fit: contain;
+}
+
+.project-card .cardTitle {
+  grid-area: title;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.project-card .cardDescription {
+  grid-area: desc;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  align-self: center;
+}
+
+.project-card button {
+  padding: 5% 10%;
+  font-size: minmax(0.3rem, 1.5rem);
+  background: rgba(255, 255, 255, 0.01);
+  color: white;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  border: 2px solid rgba(0, 217, 255, 0.712);
+  transition: all 0.3s ease;
+  min-height: 0;
+  min-width: 0;
+  margin-top: 1.7vh;
+}
+
+.project-card .GitHub {
+  grid-area: buttom1;
+}
+
+.project-card .PlayTest {
+  grid-area: buttom2;
+}
+
+.project-card button:hover {
+  transform: translateY(-0.06rem);
+  cursor: pointer;
+  border: 2px solid rgba(186, 245, 255, 0.712);
+}
+
+.project-card button:active {
+  transform: translateY(0.05rem);
+  cursor: pointer;
+  border: 2px solid rgba(0, 159, 187, 0.801);
+}
+
+@media (max-width: 500px) {
+  #projects .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 800px){
+  #projects .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 4fr auto 1fr;
+    grid-template-areas:
+      'image image'
+      'title title'
+      'buttom1 buttom2';
+  }
+
+  .project-card .cardDescription {
+    display: none;
+  }
+
+}

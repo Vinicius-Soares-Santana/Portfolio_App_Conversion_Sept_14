@@ -1,0 +1,200 @@
+html {
+  background-color: #011042;
+  margin: 0;
+  padding: 0;
+}
+
+#gamedesign,
+#softwaredev,
+body,
+#root{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 125px;
+}
+
+#presentation,
+body {
+  background: radial-gradient(
+    circle 50vh at 50% -5%,
+    #10014233 0%,
+    #07002455 50%,
+    #00010cee 100%
+  );
+}
+
+#presentation {
+  margin: 0;
+  min-height: 50vh;
+  max-height: 300vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr 2fr 1fr;
+  grid-template-areas:
+    'title title title . . . .'
+    '. pretitle pretitle pretitle pretitle pretitle .'
+    '. pretitle pretitle pretitle pretitle pretitle .'
+    '. . text text text text .'
+    '. . . . . . .';
+
+  align-items: center;
+
+  box-shadow: inset 0 12px 20px -12px rgba(65, 227, 255, 0.22);
+}
+
+#presentation h2,
+#presentation h3,
+#presentation h4,
+#presentation p {
+  color: white;
+  margin: 0;
+}
+
+#presentation h2,
+#presentation h3,
+#presentation h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#presentation p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: auto;
+  max-width: 90ch;
+}
+
+#mainTitle {
+  grid-area: title;
+  text-shadow: 0 0 5px white;
+  font-size: 2vh;
+  padding-left: 1vw;
+}
+
+#preTitle {
+  grid-area: pretitle;
+}
+
+#preTitle #my-name {
+  font-size: 5vh;
+}
+
+#preTitle #have-I-said {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5vh;
+  border-right: 0.15em solid orange;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards,
+    dramaticIntro 3s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+@keyframes dramaticIntro {
+  0% {
+    transform: translateX(0);
+    font-size: 90%;
+    white-space: nowrap;
+  }
+  99% {
+    transform: translateX(-50%);
+    font-size: 180%;
+    white-space: nowrap;
+  }
+  100% {
+    transform: translateX(0);
+    font-size: 100%;
+    white-space: normal;
+  }
+}
+
+#mainText {
+  grid-area: text;
+  font-size: 2.5vh;
+}
+
+/*---------------------------------------------------------------*/
+
+/*---------------------------SkillCards--------------------------*/
+
+#skillcards {
+  background: linear-gradient(180deg, #00010cee 5%, #00010c22 100%);
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  grid-template-rows: 10vh auto;
+  grid-template-areas:
+    '. titleText .'
+    'cards cards cards';
+  align-items: center;
+
+  box-shadow: inset 0 -12px 20px -12px rgba(255, 255, 255, 0.25);
+}
+
+.allCardSection .image-card img,
+.gameCardSection .image-card img {
+  height: 13vh;
+  width: auto;
+}
+
+#skillcards h3 {
+  margin: 0;
+  grid-area: titleText;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#galeryskills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  grid-area: cards;
+}
+
+#galeryskills .image-card {
+  margin: 0;
+  background: linear-gradient(180deg, rgba(14, 14, 77, 0.3) 20%, #00010c 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin-bottom: 7vh;
+  transition: 0.5s all ease;
+}
+
+#galeryskills .image-card:hover {
+  background: linear-gradient(180deg, rgba(14, 14, 77, 0.3) 5%, #00010c 100%);
+  transform: scale(1.3);
+  margin-bottom: 7vh;
+  z-index: 4;
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+.image-card img {
+  height: 17vh;
+  width: auto;
+  padding: 3vh;
+}
+

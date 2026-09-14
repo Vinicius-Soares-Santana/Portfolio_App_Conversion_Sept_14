@@ -1,0 +1,77 @@
+
+
+/*-------------------------Main Section--------------------------*/
+
+
+#information {
+  min-height: 50vh;
+  max-height: 300vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 7fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto auto auto 1fr;
+  grid-template-areas: "reference reference . . . ."
+                       ". . Title Title Title ."
+                       ". . EmailLogo Email . ."
+                       ". . LinkedinLogo Linkedin . ."
+                       ". . InstagramLogo Instagram . ."
+                       ". . . . . .";
+  row-gap: 2vh;
+
+}
+
+#information img {
+  height: 10vh;
+  width: auto;
+  justify-self: end;
+}
+
+#emailId {
+  grid-area: Email;
+  display: grid;
+  justify-content: start;
+}
+
+#linkedinId {
+  grid-area: Linkedin;
+  display: grid;
+  justify-content: start;
+}
+
+#instagramId {
+  grid-area: Instagram;
+  display: grid;
+  justify-content: start;
+}
+
+#emailLogo {
+  grid-area: EmailLogo;
+}
+
+
+#linkedinLogo {
+  grid-area: LinkedinLogo;
+}
+
+
+#instagramLogo {
+  grid-area: InstagramLogo;
+}
+
+.info-card * {
+  margin: 1vh 3vh;
+}
+
+#Title {
+  grid-area: Title;
+  text-shadow: 0 0 10px white;
+}
+
+#Reference {
+  grid-area: reference;
+  text-shadow: 0 0 5px white;
+  margin-left: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  font-weight:900;
+}
