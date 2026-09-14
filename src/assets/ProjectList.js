@@ -9,6 +9,17 @@ const ProjectList = [
     type: "Game",
     testable: true,
     testLink: "https://vinicius-soares-santana.github.io/TilesWizardBeta/"
+  }, 
+  {
+    id: 2,
+    image: "",
+    title: "Jamming React App",
+    description: "An app that creates personalized playlists on spotify",
+    technologies: ["REACT", "API"],
+    github: "https://github.com/Vinicius-Soares-Santana/Jamming_App",
+    type: "Game",
+    testable: false,
+    testLink: ""
   }
 ];
 
