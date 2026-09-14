@@ -12,7 +12,7 @@ function ProjectCard(props){
             <h4 className="cardTitle" >{project.title}</h4>
             <p className="cardDescription">{project.description}</p>
             <button className="GitHub" onClick={()=>{window.open(project.github, "_blank")}}>GitHub</button>
-            <button className="PlayTest">Play</button>
+            <button className="PlayTest" onClick={()=>{window.open(project.testLink, "_blank")}}>Test</button>
           </div>
     }else{
       return  <div className="project-card">
