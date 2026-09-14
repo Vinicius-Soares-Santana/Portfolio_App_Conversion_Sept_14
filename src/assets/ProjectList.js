@@ -1,7 +1,7 @@
 const ProjectList = [
   {
     id: 1,
-    image: "",
+    image: "./Images/Tiles_Wizard_Project.png",
     title: "Tiles Wizard",
     description: "A 3D platform minigame where you try to memorize a secret path",
     technologies: ["Unity", "C#"],
@@ -17,7 +17,7 @@ const ProjectList = [
     description: "An app that creates personalized playlists on spotify",
     technologies: ["REACT", "API"],
     github: "https://github.com/Vinicius-Soares-Santana/Jamming_App",
-    type: "Game",
+    type: "Software",
     testable: false,
     testLink: ""
   }
