@@ -22,14 +22,15 @@
 #projects #ProjectsGaleryGrid {
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-template-rows: auto;
   gap: 24px;
   padding: 40px;
   align-items: center;
+  width: minmax(0, 90%);
 }
 
-@media (max-width: 500px){
+@media (max-width: 620px){
   #projects #ProjectsGaleryGrid {
     margin: 0;
     display: grid;
