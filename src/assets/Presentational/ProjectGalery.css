@@ -30,7 +30,16 @@
   width: minmax(0, 90%);
 }
 
-@media (max-width: 620px){
+@media (max-width: 900px){
+  #projects #ProjectsGaleryGrid {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 600px){
   #projects #ProjectsGaleryGrid {
     margin: 0;
     display: grid;
