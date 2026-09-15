@@ -139,3 +139,16 @@ nav .stars::after {
     71vw 4vh white, 77vw 7vh white, 89vw 6vh white, 95vw 4vh white;
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
 }
+
+
+
+@media(max-width: 900px){
+  nav{
+    display: flex;
+    flex-direction: column;
+    left:15%;
+    height:50px;
+    width:50px;
+    overflow: hidden;
+  }
+}
