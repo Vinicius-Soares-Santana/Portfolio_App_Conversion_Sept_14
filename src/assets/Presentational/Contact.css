@@ -8,13 +8,14 @@
   max-height: 300vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 7fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 7fr 1fr 1fr 1fr;
   grid-template-rows: 1fr auto auto auto auto 1fr;
   grid-template-areas: "reference reference . . . ."
                        ". . Title Title Title ."
                        ". . EmailLogo Email . ."
                        ". . LinkedinLogo Linkedin . ."
                        ". . InstagramLogo Instagram . ."
+                       ". . GithubLogo Github . ."
                        ". . . . . .";
   row-gap: 2vh;
 }
@@ -46,6 +47,13 @@
   text-align:left;
 }
 
+#githubId {
+  grid-area: Github;
+  display: grid;
+  justify-content: start;
+  text-align:left;
+}
+
 #emailLogo {
   grid-area: EmailLogo;
 }
@@ -58,6 +66,13 @@
 
 #instagramLogo {
   grid-area: InstagramLogo;
+}
+
+#githubLogo {
+  grid-area: GithubLogo;
+  background-color: white;
+  border-radius:30px;
+  padding: 2px;
 }
 
 .info-card * {

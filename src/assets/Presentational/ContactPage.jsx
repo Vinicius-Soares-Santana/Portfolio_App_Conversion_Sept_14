@@ -24,6 +24,12 @@ function ContactPage(props){
       <h2>Instagram</h2>
       <p>@vinisoaressantana</p>
   </div>
+
+  <img src="/Img_Sources/GithubLogo.svg.webp" id="githubLogo"/>
+  <div className="info-card" id="githubId">
+      <h2>Github</h2>
+      <p>github.com/Vinicius-Soares-Santana</p>
+  </div>
   
 </section>)
 }
