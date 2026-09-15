@@ -16,7 +16,7 @@ function ContactPage(props){
   <div className="info-card" id="linkedinId">
       
       <h2>LinkedIn</h2>
-      <p>linkedin.com/in/vinisoaressantana</p>
+      <p><a href="github.com/Vinicius-Soares-Santana"target="_blank">linkedin.com/in/vinisoaressantana</a></p>
   </div>
 
   <img src="/Img_Sources/Instagram icon.png" id="instagramLogo"/>
@@ -28,7 +28,7 @@ function ContactPage(props){
   <img src="/Img_Sources/GithubLogo.svg.webp" id="githubLogo"/>
   <div className="info-card" id="githubId">
       <h2>Github</h2>
-      <p>github.com/Vinicius-Soares-Santana</p>
+      <p><a href="github.com/Vinicius-Soares-Santana" target="_blank">github.com/Vinicius-Soares-Santana</a></p>
   </div>
   
 </section>)

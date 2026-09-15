@@ -92,3 +92,24 @@
   font-size: 2vh;
   font-weight:900;
 }
+
+
+#information a{
+  margin:0;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+#information a:hover{
+  text-shadow: 0 0 5px white;
+  cursor: pointer;
+}
+
+#information a:active{
+  color: rgb(214, 214, 214);
+  text-shadow: 0 0 1px white;
+}
+
+#information a:active{
+  color: gray;
+}
