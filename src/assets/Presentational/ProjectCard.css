@@ -19,6 +19,9 @@
   min-height: 150px;
   min-width: 100px;
 
+  container-type: size;
+  container-name: projectCard;
+
   /*remove later*/
   justify-items: center;
   align-items: center;
@@ -132,5 +135,30 @@
     display: none;
   }
 
+}
+
+
+@container projectCard (max-height: 185px) and (max-width: 145px){
+  #projects .project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 4fr auto 1fr;
+    grid-template-areas:
+      'image image'
+      'title title'
+      'buttom1 buttom2';
+    height: 185px;
+    width: 145px;
+    min-height: 170px;
+  }
+
+  .project-card .cardDescription {
+    display: none;
+  }
+
+  .project-card .cardTitle{
+    font-size: 0.7rem;
+    align-self: center;
+  }
 }
 
