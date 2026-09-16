@@ -22,6 +22,10 @@ nav {
   transform: translate(-50%);
 }
 
+nav .sidebarSymbol{
+  visibility: hidden;
+}
+
 nav a {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -144,11 +148,125 @@ nav .stars::after {
 
 @media(max-width: 900px){
   nav{
+    position: fixed;
     display: flex;
     flex-direction: column;
     left:15%;
     height:50px;
-    width:50px;
+    width:70px;
     overflow: hidden;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 217, 255, 0.467);
   }
+
+  nav .navButton{
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+  nav .sidebarSymbol{
+    visibility: visible;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 'area1'
+                          'area2'
+                          'area3';
+    gap: 2%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width:80%;
+    height: 35%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .sidebarSymbol .symbol{
+    visibility: visible;
+    border: 2px solid white;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.467);
+    width: 50%;
+    height: 0;
+    align-self: center;
+    justify-self: center;;
+  }
+
+  nav .sidebarSymbol .first{
+    grid-area: area1;
+    visibility: visible;
+  }
+
+  nav .sidebarSymbol .second{
+    grid-area: area2;
+    visibility: visible;
+  }
+
+  nav .sidebarSymbol .third{
+    grid-area: area3;
+    visibility: visible;
+  }
+
+  nav:hover{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'one'
+                          'two'
+                          'three'
+                          'four'
+                          'five';
+    height:90vh;
+    width:40vw;
+    left:30%;
+    border: none;
+  }
+
+  nav:hover .navButton{
+    visibility: visible;
+    margin: auto;
+    transition: all 0.5s ease;
+  }
+
+  nav:hover .sidebarSymbol{
+    visibility: hidden;
+  }
+
+  nav:hover .sidebarSymbol *{
+    visibility: hidden;
+  }
+
+  #gameDevNav {
+    grid-area: one;
+    min-width: 110px;
+    min-height: 30px;
+  }
+  
+  #softwareDevNav {
+    grid-area: two;
+    min-width: 110px;
+    min-height: 30px;
+  }
+  
+  #aboutme {
+    grid-area: three;
+    min-width: 110px;
+    min-height: 30px;
+  }
+  
+  #projectsbutton {
+    grid-area: four;
+    min-width: 110px;
+    min-height: 30px;
+  }
+  
+  #contact {
+    grid-area: five;
+    min-width: 110px;
+    min-height: 30px;
+  }
+
 }

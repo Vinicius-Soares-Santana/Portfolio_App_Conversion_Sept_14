@@ -5,6 +5,11 @@ import { Outlet, Link } from 'react-router-dom';
 function NavBar(props){
   return(<>
     <nav id="navigation" className="hidden">
+                <div className="sidebarSymbol">
+                  <div className="symbol first"></div>
+                  <div className="symbol second"></div>
+                  <div className="symbol third"></div>
+                </div>
                 <div className="stars"></div>
                   <Link id="gameDevNav" className="navButton" to="gameDev"><h2 className="navButtonHead">Game Dev</h2></Link>
                   <Link id="softwareDevNav" className="navButton" to="/main/"><h2 className="navButtonHead">Software Dev</h2></Link>
