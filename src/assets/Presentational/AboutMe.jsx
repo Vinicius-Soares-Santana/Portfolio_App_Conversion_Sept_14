@@ -13,7 +13,7 @@ function AboutMe(props){
       <h3 className="title">About Me</h3>
       <p>
           Hey, my name is Vinicius,<br /> 
-          I'm a brazilian living in Canada and venturing in a new career. My professional journey started in Brazil, where I graduated as a Mechatronics engineer and started working as a technician. That position made possible for me to start a pos-graduation in business and obtain a better possition in another company. As years passed by, I kept leaving aside my childhood dream of becoming a Game Designer, trating it barelly as a hobbie, until I moved to Canada. at that point, when my life, and carrer had to start over, all I could think was, why not now?<br />
+          I'm a brazilian living in Canada and venturing in a new career. My professional journey started in Brazil, where I graduated as a Mechatronics engineer and started working as a technician. That position made possible for me to start a pos-graduation in business and obtain a better possition in another company. As years passed by, I kept leaving aside my childhood dream of becoming a Game Designer, barelly treating it as a hobbie, until I moved to Canada. at that point, when my life, and carrer had to start over, all I could think was, why not now?<br />
           and that's how I got here, Currently studying software development and game design and starting a new carrer with coding and creating interactive experiences.
       </p>
   </div>
