@@ -17,7 +17,7 @@ function GameDevPage(props){
       <h3>Some of my skills:</h3>
       <div id="galeryskills">
            <div className="image-card">
-              <img src=`{${import.meta.env.BASE_URL}Img_Sources/HTML5_logo.png`}/>
+              <img src={`${import.meta.env.BASE_URL}Img_Sources/HTML5_logo.png`}/>
           </div>
           <div className="image-card">
               <img src={`${import.meta.env.BASE_URL}Img_Sources/CSS3_logo.png`}/>
