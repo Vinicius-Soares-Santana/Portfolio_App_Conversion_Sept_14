@@ -17,22 +17,22 @@ function GameDevPage(props){
       <h3>Some of my skills:</h3>
       <div id="galeryskills">
            <div className="image-card">
-              <img src="/Img_Sources/HTML5_logo.png"/>
+              <img src=`${import.meta.env.BASE_URL}Img_Sources/HTML5_logo.png`/>
           </div>
           <div className="image-card">
-              <img src="/Img_Sources/CSS3_logo.png"/>
+              <img src=`${import.meta.env.BASE_URL}Img_Sources/CSS3_logo.png`/>
           </div>
           <div className="image-card">
-              <img src="/Img_Sources/JavaScript_Logo.png"/>
+              <img src=`${import.meta.env.BASE_URL}Img_Sources/JavaScript_Logo.png`/>
           </div>
           <div className="image-card">
               <img src="https://images.icon-icons.com/2415/PNG/512/csharp_plain_logo_icon_146577.png"/>
           </div>
           <div className="image-card">
-              <img src="/Img_Sources/Official_unity_logo.png"/>
+              <img src=`${import.meta.env.BASE_URL}Img_Sources/Official_unity_logo.png`/>
           </div>
           <div className="image-card" id="react">
-              <img src="/react.svg"/>
+              <img src=`${import.meta.env.BASE_URL}react.svg`/>
           </div>
       </div>
   </section>
