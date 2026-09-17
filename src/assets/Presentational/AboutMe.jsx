@@ -7,7 +7,7 @@ function AboutMe(props){
   <div id="mePic">
       <div id="frame1"></div>
       <div id="frame2"></div>
-      <img src="/Img_Sources/Profile_Pic.jpg" id="profilePic"/>
+      <img src={`${import.meta.env.BASE_URL}Img_Sources/Profile_Pic.jpg`} id="profilePic"/>
   </div>
   <div id="aboutMe">
       <h3 className="title">About Me</h3>
