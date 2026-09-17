@@ -24,7 +24,7 @@ function SoftwareDevPage(porps){
               <img src={`${import.meta.env.BASE_URL}Img_Sources/CSS3_logo.png`}/>
           </div>
           <div className="image-card">
-              <img src=`{${import.meta.env.BASE_URL}Img_Sources/JavaScript_Logo.png`}/>
+              <img src={`${import.meta.env.BASE_URL}Img_Sources/JavaScript_Logo.png`}/>
           </div>
           <div className="image-card">
               <img src="https://images.icon-icons.com/2415/PNG/512/csharp_plain_logo_icon_146577.png"/>
