@@ -21,7 +21,11 @@ const router = createBrowserRouter(createRoutesFromElements(
           <Route path='allprojects' element={ <AllProjects /> } />
       </Route>
   </Route>
-));
+),
+ {
+   basename: "/Portfolio_App_Conversion_Sept_14",
+ }
+);
 
 function App() {
   return (
