@@ -9,13 +9,13 @@ function ProjectGalery(props){
 
   useEffect(()=>{
     const retrieveProjects = async() => {
-      const projectResponse = await fetch("/ProjectList.json");
+      const projectResponse = await fetch(`${import.meta.env.BASE_URL}ProjectList.json`);
       const currentProjectList = await projectResponse.json();
       setProjectList(currentProjectList);
     }
     retrieveProjects();
     
-  }, [projectList]);
+  }, []);
   
 
   const projectsToDisplay = projectList.filter((project) => {if(projectType != "All"){return project.type == projectType}else{return true}});
