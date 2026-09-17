@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/Images/Tiles_Wizard_Project.png",
+    "image": "/Portfolio_App_Conversion_Sept_14/Images/Tiles_Wizard_Project.png",
     "title": "Tiles Wizard",
     "description": "A 3D platform minigame where you try to memorize a secret path",
     "technologies": ["Unity", "C#"],
@@ -12,7 +12,7 @@
   }, 
   {
     "id": 2,
-    "image": "/Images/Jamming.png",
+    "image": "/Portfolio_App_Conversion_Sept_14//Images/Jamming.png",
     "title": "Jamming",
     "description": "An app that creates personalized playlists on spotify",
     "technologies": ["REACT", "API"],
